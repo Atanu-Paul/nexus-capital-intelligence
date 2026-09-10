@@ -1,0 +1,14 @@
+HEADLINE: Meridian Trust Bank Shares Surge Following Launch of Next-Gen Wealth Platform
+DATE: 2026-08-12
+SENTIMENT: positive
+Meridian Trust Bank today announced the official rollout of its Horizon AI wealth management platform, beating its initial launch target by two weeks. Initial customer adoption rates have exceeded expectations, with over fifty thousand active users registering in the first forty-eight hours. Financial analysts have reacted favorably, upgrading the bank's stock outlook to a strong buy. Executives expect the new digital services to drive a significant increase in non-interest revenue over the next fiscal year.
+
+HEADLINE: Meridian Trust Bank Names New Head of Retail Banking
+DATE: 2026-07-20
+SENTIMENT: neutral
+Meridian Trust Bank has appointed Marcus Vance as the Executive Vice President of its retail banking division, effective next month. Vance succeeds Eleanor Vance, who is retiring after a distinguished fifteen-year career at the financial institution. The transition is part of a long-planned succession strategy structured by the bank's board of directors. Industry observers expect no immediate shifts in the bank’s retail strategy or consumer product offerings during the transition period.
+
+HEADLINE: Meridian Trust Bank Faces Backlash Over Extended Digital Banking Outage
+DATE: 2026-09-08
+SENTIMENT: negative
+Meridian Trust Bank customers experienced widespread disruptions on Tuesday due to a major technical failure in the bank's primary data processing center. Online banking portals and mobile applications remained inaccessible for over twelve hours, preventing users from executing crucial transactions. Consumer advocacy groups have criticized the bank's delayed response and lack of transparent communication during the crisis. Shares of Meridian Trust dipped by nearly three percent as the company worked to fully restore system functionality.

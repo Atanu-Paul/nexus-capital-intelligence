@@ -1,0 +1,14 @@
+HEADLINE: Ashford Financial Group Reports Record Wealth Management Inflows in Q2 Earnings
+DATE: 2026-08-12
+SENTIMENT: positive
+Ashford Financial Group announced a stellar performance for the second quarter, driven by unprecedented inflows into its private wealth management division. The bank's newly launched digital advisory platform attracted a surge of millennial investors, boosting overall assets under management by 14%. Analysts praised the firm's strategic pivot toward automated wealth services, suggesting it positions Ashford well for sustained growth. Executives expressed high confidence in maintaining this momentum through the remainder of the fiscal year.
+
+HEADLINE: Ashford Financial Group Appoints Dr. Helena Vance to Board of Directors
+DATE: 2026-09-05
+SENTIMENT: neutral
+Ashford Financial Group has officially named Dr. Helena Vance, a veteran economist and former regulatory advisor, to its board of directors effective immediately. Dr. Vance fills the vacancy left by Arthur Pendelton, who retired earlier this summer. The appointment is expected to bolster the board's governance capabilities, particularly in navigating complex international trade regulations. Spokespersons for the bank stated that her extensive background in monetary policy aligns well with the group's current strategic oversight needs.
+
+HEADLINE: Ashford Financial Group Under Fire Over Systemic Mobile App Outages
+DATE: 2026-07-19
+SENTIMENT: negative
+Customers of Ashford Financial Group experienced widespread disruption this weekend due to a critical database failure that knocked out mobile banking services for over 36 hours. The prolonged outage prevented millions of users from executing transfers, checking balances, and processing urgent payments. While the technical issues have since been resolved, the bank is now facing intense public backlash and scrutiny from regulatory bodies regarding its IT infrastructure resilience. Shares of Ashford dipped by 3.2% following the incident as investors express concern over potential customer churn.

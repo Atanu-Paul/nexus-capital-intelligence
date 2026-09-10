@@ -1,0 +1,14 @@
+HEADLINE: Cascade Biopharma Announces Positive Phase 2 Results for Lead Oncology Candidate
+DATE: 2026-07-14
+SENTIMENT: positive
+Cascade Biopharma shared highly encouraging data from its mid-stage clinical trial evaluating CB-902 for advanced solid tumors. The trial met its primary endpoint, demonstrating a statistically significant improvement in progression-free survival compared to standard therapies. Management plans to request a breakthrough therapy designation with regulatory authorities by the end of the year.
+
+HEADLINE: Regulatory Authorities Request Additional Stability Data from Cascade Biopharma
+DATE: 2026-08-22
+SENTIMENT: neutral
+The European Medicines Agency has issued a supplementary information request regarding the manufacturing process for Cascade Biopharma's pipeline drug CB-404. Company representatives stated that the inquiry is standard procedure and does not impact the primary clinical review timeline. Analysts expect the company to submit the requested documentation within the next quarter without delaying commercialization projections.
+
+HEADLINE: Cascade Biopharma Faces Trial Delay Following Unexpected Manufacturing Audit Findings
+DATE: 2026-09-10
+SENTIMENT: negative
+Cascade Biopharma disclosed that the initiation of its upcoming pivotal Phase 3 trial for CB-112 will be postponed by at least six months. The delay stems from necessary remediation actions identified during a recent internal quality audit of its primary contract manufacturing facility. Consequently, several equity research firms have downgraded the stock and revised their near-term revenue forecasts downward.
