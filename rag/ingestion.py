@@ -5,6 +5,8 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+from rag.paths import synthetic_data_dir
+
 COMPANY_NAMES = [
     "NovaTech Systems",
     "Quantix Software",
@@ -109,7 +111,7 @@ def infer_company_name(filename: str) -> str:
     return SLUG_TO_COMPANY.get(slug, slug.replace("_", " ").title())
 
 
-def load_all_documents(base_dir: str = "synthetic_data") -> list[dict]:
+def load_all_documents(base_dir: str | Path | None = None) -> list[dict]:
     """Load and chunk all PDF and text documents under the synthetic data directory.
 
     Args:
@@ -118,7 +120,7 @@ def load_all_documents(base_dir: str = "synthetic_data") -> list[dict]:
     Returns:
         List of chunk dictionaries with text and metadata.
     """
-    base_path = Path(base_dir)
+    base_path = Path(base_dir) if base_dir is not None else synthetic_data_dir()
     if not base_path.exists():
         raise FileNotFoundError(f"Synthetic data directory not found: {base_dir}")
 
