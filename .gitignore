@@ -50,4 +50,5 @@ htmlcov/
 
 # Project-specific
 chroma_db/
+data/
 synthetic_data/*.pdf

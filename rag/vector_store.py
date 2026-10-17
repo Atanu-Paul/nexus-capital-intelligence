@@ -2,40 +2,42 @@
 
 import hashlib
 import logging
+from pathlib import Path
 
 import chromadb
 
-from rag.embeddings import EmbeddingModel
+from rag.embeddings import EmbeddingModel, get_embedding_model
+from rag.paths import chroma_db_dir
 
 logger = logging.getLogger(__name__)
 
-CHROMA_DB_PATH = "./chroma_db"
 COLLECTION_NAME = "investment_research"
 
 
 class VectorStore:
     """Persistent ChromaDB wrapper for investment research document chunks."""
 
-    def __init__(self, persist_directory: str = CHROMA_DB_PATH) -> None:
+    def __init__(
+        self,
+        persist_directory: Path | str | None = None,
+        embedding_model: EmbeddingModel | None = None,
+    ) -> None:
         """Initialize the persistent ChromaDB client and collection."""
-        self._client = chromadb.PersistentClient(path=persist_directory)
+        path = Path(persist_directory) if persist_directory else chroma_db_dir()
+        path.mkdir(parents=True, exist_ok=True)
+        self._client = chromadb.PersistentClient(path=str(path))
         self._collection = self._client.get_or_create_collection(
             name=COLLECTION_NAME,
             metadata={"hnsw:space": "cosine"},
         )
-        self._embedding_model = EmbeddingModel()
+        self._embedding_model = embedding_model or get_embedding_model()
 
     def collection_count(self) -> int:
         """Return the number of chunks currently stored in the collection."""
         return self._collection.count()
 
     def add_documents(self, chunks: list[dict], force: bool = False) -> None:
-        """Embed document chunks and add them to the vector store.
-
-        Args:
-            chunks: Chunk dictionaries produced by load_all_documents().
-            force: Re-ingest even if the collection is already populated.
-        """
+        """Embed document chunks and add them to the vector store."""
         if not force and self.collection_count() > 0:
             logger.info("Vector store already populated, skipping ingestion")
             return
@@ -86,16 +88,7 @@ class VectorStore:
         top_k: int = 5,
         sector_filter: str | None = None,
     ) -> list[dict]:
-        """Search the vector store for similar document chunks.
-
-        Args:
-            query_embedding: Embedding vector for the query.
-            top_k: Number of results to return.
-            sector_filter: Optional sector metadata filter.
-
-        Returns:
-            Matching chunks with metadata and similarity scores.
-        """
+        """Search the vector store for similar document chunks."""
         query_kwargs = {
             "query_embeddings": [query_embedding],
             "n_results": top_k,

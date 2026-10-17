@@ -1,6 +1,6 @@
 """Retrieval logic used by agents."""
 
-from rag.embeddings import EmbeddingModel
+from rag.embeddings import EmbeddingModel, get_embedding_model
 from rag.vector_store import VectorStore
 
 
@@ -14,7 +14,7 @@ class Retriever:
     ) -> None:
         """Initialize the retriever with a vector store and embedding model."""
         self._vector_store = vector_store or VectorStore()
-        self._embedding_model = embedding_model or EmbeddingModel()
+        self._embedding_model = embedding_model or get_embedding_model()
 
     def retrieve(
         self,
